@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Game of Thrones';
+    src: url('GameofThrones.eot');
+    src: url('GameofThrones.eot?#iefix') format('embedded-opentype'),
+        url('GameofThrones.woff') format('woff'),
+        url('GameofThrones.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url(../images/Iron_throne.jpg);
+    background-size:100vw 100vh;
+    height:100vh !important;
+    width:100vw;
+}
+
+#titleContainer{
+    background: url(../images/logo.png);
+    background-size: 100vw 50vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    height:50vh;
+    
+}
+
+h1{
+    font-family: "Game of Thrones", Fallback, sans-serif;
+}
+
+#start{
+    width:100vw;
+    height: 50vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#flexContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width:50vw;
+
+}
+
+#choice{
+    display: none;
+}
+
+.p_button{
+    margin-bottom: 10px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-weight: bold;
+    font-size:185%
+}
