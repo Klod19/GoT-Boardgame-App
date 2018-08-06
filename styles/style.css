@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Game of Thrones';
-    src: url('GameofThrones.eot');
-    src: url('GameofThrones.eot?#iefix') format('embedded-opentype'),
-        url('GameofThrones.woff') format('woff'),
-        url('GameofThrones.ttf') format('truetype');
+    src: url('../fonts/GameofThrones.eot');
+    src: url('../fonts/GameofThrones.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GameofThrones.woff') format('woff'),
+        url('../fonts/GameofThrones.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,6 +13,8 @@ body{
     background-size:100vw 100vh;
     height:100vh !important;
     width:100vw;
+    font-family: "Game of Thrones";
+
 }
 
 #titleContainer{
@@ -21,11 +23,12 @@ body{
     background-repeat: no-repeat;
     text-align: center;
     height:50vh;
+
     
 }
 
 h1{
-    font-family: "Game of Thrones", Fallback, sans-serif;
+    font-family: "Game of Thrones";
 }
 
 #start{
@@ -46,15 +49,46 @@ h1{
 
 }
 
+#first_go_container{
+    display:none;
+    height: 50vh;
+    width: 100vw;
+}
+
 #choice{
     display: none;
+    height:10vh;
+}
+
+.flex{
+    width:100%;
+    height: 100%;
+    
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.c_button{
+    margin-bottom: 10px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    font-weight: bold;
+    font-size:185%
 }
 
 .p_button{
     margin-bottom: 10px;
-    height: 40px;
+    height: 60px;
+    width:60vw;
     background-color: rgba(0,0,0,0.4);
     color: white;
     font-weight: bold;
-    font-size:185%
+    font-size:150%
+}
+
+#titler{
+    display: none;
+    height: 40vh
 }

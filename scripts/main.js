@@ -13,8 +13,12 @@ function getPlayersNumber() {
     amount = event.target.id;
     console.log("AMOUNT START: " + amount);
     clonedArray.splice(amount, amount);
-    $("#start").hide();
-    $("#choice").show();
+//    $("#start").hide();
+    $("#flexContainer").hide();
+    $("#first_go_container").show();
+//    $("#choice").show();
+//    $("#titler").show();
+//    $("#choice").toggleClass("flex");
     return amount, clonedArray;
 }
 
