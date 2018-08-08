@@ -57,7 +57,7 @@ h1{
 
 }
 
-#first_go_container{
+#go_container{
     display:none;
     height: 50vh;
     width: 100vw;
@@ -103,18 +103,39 @@ h1{
     display: block !important;
 }
 
+/*
 .hidden{
     display:none;
 }
+*/
 
-#space{
-    height: 90vh
+#house_container{
+    height:20vh;
+    
+    padding-top:20px;
+    
+    font-size:185%;
+    font-weight: bold;
+        
+    text-align: center;
 }
 
-#choice{
+#house_name{
+    font-size:175%;
+}
+
+#space{
+    height: 70vh
+}
+
+#buttons{
     height:10vh;
     
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#choiceContainer{
+    display:none;
 }
