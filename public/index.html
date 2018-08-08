@@ -30,7 +30,8 @@
         
     </div>
     
-    <div id="choiceContainer" >
+    <div id="choiceContainer" class="hidden" >
+       
         <div id="house_container">
             <p>You will lead House</p>
             <p id= "house_name"></p>
@@ -47,9 +48,24 @@
     </div>
 
 
+<!--    FIREBASE CODE-->
     
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB35X1rSB842hNZv-JxX1qXYIqGSNJmfv0",
+        authDomain: "got-app-2140d.firebaseapp.com",
+        databaseURL: "https://got-app-2140d.firebaseio.com",
+        projectId: "got-app-2140d",
+        storageBucket: "got-app-2140d.appspot.com",
+        messagingSenderId: "380491541351"
+      };
+      firebase.initializeApp(config);
+    </script>
+       
     
-        <!--  jQuery Library-->
+<!--  jQuery Library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--    -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -99,11 +99,9 @@ function visualizeHouse (n){
 }
 
 function goBack (){
+    //with parameter "true", the page reloads from server
+    //with parameter "false" the page reloads from brower's cache
     location.reload(true);
-//    $("#choiceContainer").toggleClass("shown");
-//    $("#choiceContainer").toggleClass("hidden");
-//    $("#start").show();
-    
 }
 
 $(".p_button").click(function(){
