@@ -23,10 +23,24 @@ function getPlayersNumber() {
 }
 
 
+function showIt(){
+    console.log("show");
+    $("#choiceContainer").toggleClass("hidden");
+    $("#choiceContainer").toggleClass("shown");
+    if($("#choiceContainer").css("display", "none")){
+        console.log("DISPLAY NONE")
+    }
+    if($("#choiceContainer").hasClass("hidden")){
+        console.log("HIDDEN")
+    }
+    $("#start").hide();
+
+}
+
 function getPlayers () {
     $("#titleContainer").hide();
     count++
-    var button = $("#go");
+    var button = $("#next");
 //var canvas = document.getElementById('can');
 //var context = canvas.getContext("2d");
     if (clonedArray.length == 1 && count == amount  ){
@@ -68,6 +82,11 @@ $(".p_button").click(function(){
 })
 
 $("#go").click(function(){
+    showIt();
+    getPlayers();
+})
+
+$("#next").click(function(){
     getPlayers();
 })
 

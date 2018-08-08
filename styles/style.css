@@ -12,6 +12,7 @@ body{
     background-image: url(../images/Iron_throne.jpg);
     background-size:100vw 100vh;
     height:100vh !important;
+    
     width:100vw;
     font-family: "Game of Thrones";
 
@@ -21,6 +22,7 @@ body{
     background: url(../images/logo.png);
     background-size: 100vw 50vh;
     background-repeat: no-repeat;
+    
     text-align: center;
     height:50vh;
 
@@ -34,9 +36,13 @@ h1{
 #start{
     width:100vw;
     height: 50vh;
+    
     display: flex;
     align-content: center;
     justify-content: center;
+    
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
 
@@ -44,8 +50,10 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items:center;
+    
     height: 50vh;
-    width:50vw;
+    width:100vw;
 
 }
 
@@ -55,10 +63,7 @@ h1{
     width: 100vw;
 }
 
-#choice{
-    display: none;
-    height:10vh;
-}
+
 
 .flex{
     width:100%;
@@ -70,25 +75,46 @@ h1{
 }
 
 .c_button{
-    margin-bottom: 10px;
+    margin: 20px;
+    
     height: 40px;
+    
     background-color: rgba(0,0,0,0.1);
     color: white;
+    
     font-weight: bold;
     font-size:185%
 }
 
 .p_button{
     margin-bottom: 10px;
+    
     height: 60px;
     width:60vw;
+    
     background-color: rgba(0,0,0,0.4);
     color: white;
+    
     font-weight: bold;
     font-size:150%
 }
 
-#titler{
-    display: none;
-    height: 40vh
+.shown{
+    display: block !important;
+}
+
+.hidden{
+    display:none;
+}
+
+#space{
+    height: 90vh
+}
+
+#choice{
+    height:10vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
